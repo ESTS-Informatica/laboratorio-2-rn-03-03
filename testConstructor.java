@@ -28,6 +28,11 @@ public class testConstructor
         assertEquals(150000.0, property.getPrice());
     }
     
+    @Test
+    public void testToString() {
+        assertEquals(property.toString(), "Descricao : T3 Monte Belo\n Preco     : 150000.0 Euros");
+    }
+    
     /**
      * Define a 'fixture' do teste.
      *

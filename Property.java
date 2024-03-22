@@ -65,8 +65,9 @@ public class Property {
 
     @Override
     public String toString() {
-        return null;
-        
+        String str = "Descricao : " + this.description + 
+                     "\n Preco     : " + this.price + " Euros";
+        return str;
     }
 
 }
