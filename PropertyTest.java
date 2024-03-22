@@ -11,14 +11,14 @@ import org.junit.jupiter.api.Test;
  * @author  (seu nome)
  * @version (um número da versão ou uma data)
  */
-public class testConstructor
+public class PropertyTest
 {
     Property property = new Property("T3 Monte Belo", 150000.0);
     
     /**
      * Construtor default para a classe de teste testConstructor
      */
-    public testConstructor()
+    public PropertyTest()
     {
     }
 
