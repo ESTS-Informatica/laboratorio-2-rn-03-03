@@ -1,5 +1,4 @@
 
-
 /**
  * A property to sell.
  *
@@ -20,21 +19,23 @@ public class Property {
      * @param price The property price.
      */
     public Property(String description, double price) {
-
+        this.id = 1;
+        this.description = description;
+        this.price = price;
     }
 
     /**
      * Id selector.
      */
     public int getId() {
-        
+        return this.id;
     }
 
     /**
      * Description selector.
      */
     public String getDescription() {
-
+        return this.description;
     }
 
     /**
@@ -50,7 +51,7 @@ public class Property {
      * Price selector.
      */
     public double getPrice() {
-        
+        return this.price;
     }
     
     /**
@@ -64,5 +65,8 @@ public class Property {
 
     @Override
     public String toString() {
+        return null;
+        
     }
+
 }
