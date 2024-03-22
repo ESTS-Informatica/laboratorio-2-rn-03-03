@@ -75,7 +75,15 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerClient(User client) {
-        return true;         // dummy implementation
+            if(clients.contains(client)){
+                return false;
+            } else {
+                 if(client != null){
+                    clients.add(client);
+                    return true;
+                }
+            } 
+            return false;
     }
 
     /**
@@ -85,7 +93,15 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerSeller(User seller) {
-        return true;         // dummy implementation
+        if(sellers.contains(seller)){
+                return false;
+            } else {
+                 if(seller != null){
+                    sellers.add(seller);
+                    return true;
+                }
+            } 
+            return false;        
     }
 
     /**
@@ -95,7 +111,15 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerProperty(Property property) {
-        return true;         // dummy implementation
+        if(properties.contains(property)){
+                return false;
+            } else {
+                 if(property != null){
+                    properties.add(property);
+                    return true;
+                }
+            } 
+            return false;
     }
 
     /**
@@ -105,7 +129,15 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerSell(Sell sell) {
-        return true;         // dummy implementation
+       if(sells.contains(sell)){
+                return false;
+            } else {
+                 if(sell != null){
+                    sells.add(sell);
+                    return true;
+                }
+            } 
+            return false;
     }
 
     /**

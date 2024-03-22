@@ -34,6 +34,75 @@ public class CompanyTest
         assertNotNull(this.company.getSells());
     }
     
+    //Client
+    @Test
+    public void testRegisterClient() {
+        assertTrue(this.company.registerClient(client1));
+    }
+
+    @Test
+    public void testRegisterClients() {
+        assertTrue(this.company.registerClient(client1));
+        assertTrue(this.company.registerClient(client2));
+    }
+    
+    @Test
+    public void testRegisterClientDuplicate() {
+        assertTrue(this.company.registerClient(client1));
+        assertFalse(this.company.registerClient(client1));
+    }
+    
+    @Test
+    public void testRegisterClientNull() {
+        assertFalse(this.company.registerClient(null));
+    }
+    
+    //Seller
+    @Test
+    public void testRegisterSeller() {
+        assertTrue(this.company.registerSeller(seller1));
+    }
+
+    @Test
+    public void testRegisterSellerss() {
+        assertTrue(this.company.registerSeller(seller1));
+        assertTrue(this.company.registerSeller(seller2));
+    }
+    
+    @Test
+    public void testRegisterSellerDuplicate() {
+        assertTrue(this.company.registerClient(seller1));
+        assertFalse(this.company.registerClient(seller1));
+    }
+    
+    @Test
+    public void testRegisterSellerNull() {
+        assertFalse(this.company.registerSeller(null));
+    }
+    
+    // Property
+    @Test
+    public void testRegisterProperty() {
+        assertTrue(this.company.registerClient(client1));
+    }
+
+    @Test
+    public void testRegisterProperties() {
+        assertTrue(this.company.registerClient(client1));
+        assertTrue(this.company.registerClient(client2));
+    }
+    
+    @Test
+    public void testRegisterPropertyDuplicate() {
+        assertTrue(this.company.registerClient(client1));
+        assertFalse(this.company.registerClient(client1));
+    }
+    
+    @Test
+    public void testRegisterPropertyNull() {
+        assertFalse(this.company.registerClient(null));
+    }
+    
     /**
      * Define a 'fixture' do teste.
      *
