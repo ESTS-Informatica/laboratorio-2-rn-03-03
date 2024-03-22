@@ -18,6 +18,10 @@ public class CompanyTest
     private User client2 = new User("António Francisco", "922222222", "tochico@hotmail.com");
     private User seller1 = new User("Fernando Fernandes", "966777101", "fefe@remax.pt");
     private User seller2 = new User("Rodrigo Rodrigues", "966777152", "roro@remax.pt");
+    private Property property1 = new Property("Casa1", 150000.0);
+    private Property property2 = new Property("Casa2", 170000.0);
+    private Sell sell1 = new Sell(client1, seller1, property1);
+    private Sell sell2 = new Sell(client2, seller2, property2);
     
     /**
      * Construtor default para a classe de teste CompanyTest
@@ -32,6 +36,11 @@ public class CompanyTest
         assertNotNull(this.company.getSellers());
         assertNotNull(this.company.getProperties());
         assertNotNull(this.company.getSells());
+    }
+    
+    @Test
+    public void testCreateSell() {
+        
     }
     
     //Client
